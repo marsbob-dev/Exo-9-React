@@ -5,17 +5,28 @@ import SearchBar from './SearchBar'
 
 class Nav extends Component {
 
-    render(){
+  onClic1 = () => {
+    console.log("Accueil")
+  }
+  onMouseOver1 = () => {
+    console.log("Galerie")
+  }
+  onDoubleClic1 = () => {
+    console.log("Contact")
+  }
+  
+
+  render(){
       return (
         <div className="row m-0 p-0">
             <div className="col-6 my-3">
-            <button className="ml-5 text-white border-success btn">
+            <button onClick={this.onClic1} className="ml-5 text-white border-success btn">
                 Link 1
             </button>
-            <button className="mx-4 text-white border-success btn">
+            <button onMouseOver={this.onMouseOver1} className="mx-4 text-white border-success btn">
                 Link 2
             </button>
-            <button className="text-white border-success btn">
+            <button onDoubleClick={this.onDoubleClic1} className="text-white border-success btn">
                 Link 3
             </button>
             </div>

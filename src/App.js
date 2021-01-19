@@ -7,6 +7,7 @@ import Nav from './modules/Nav'
 import SearchBar from './modules/SearchBar'
 
 function App() {
+  
   return (
     <div className="">
       <Body></Body>
